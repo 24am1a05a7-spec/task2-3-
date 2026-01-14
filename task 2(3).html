@@ -1,0 +1,150 @@
+<html>
+
+<head>
+
+<title>Registration Form</title>
+</head>
+
+<body>
+
+<h2 style="text-align: center;">Registration Form</h2>
+
+<form action="/submit_registration" method="post">
+
+<table>
+
+<tr>
+
+<th colspan="2">Personal Details</th>
+
+</tr>
+
+<tr>
+
+<td>Full Name:</td>
+
+<td><input type="text" name="full_name"
+
+placeholder="Enter your full name" required></td>
+
+</tr>
+
+<tr>
+
+<td>Password:</td>
+
+<td><input type="password" name="password"
+
+placeholder="Enter your password" required></td>
+
+</tr>
+
+<tr>
+
+<td>Age:</td>
+
+<td><input type="number" name="age" min="1"
+
+max="100" placeholder="Enter your age" required></td>
+
+</tr>
+
+<tr>
+
+<td>Date of Birth:</td>
+
+<td><input type="date" name="dob" required></td>
+
+</tr>
+
+<tr>
+<td>Gender:</td>
+
+<td>
+
+<input type="radio" name="gender" value="male" required> Male<br>
+
+<input type="radio" name="gender" value="female" required> Female<br>
+
+<input type="radio" name="gender" value="other" required> Other
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Hobbies:</td>
+
+<td>
+
+<input type="checkbox" name="hobbies"
+
+value="reading"> Reading<br>
+
+<input type="checkbox" name="hobbies"
+
+value="traveling"> Traveling<br>
+
+<input type="checkbox" name="hobbies"
+
+value="gaming"> Gaming
+
+</td>
+
+</>
+
+<tr>
+
+<td>Country:</td>
+
+<td>
+
+<select name="country" required>
+
+<option value="">-- Select your country --</option>
+
+<option value="us">United States</option>
+
+<option value="uk">United Kingdom</option>
+<option value="india">India</option>
+
+<option value="australia">Australia</option>
+
+<option value="canada">Canada</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Address:</td>
+
+<td><textarea name="address" rows="4"
+
+placeholder="Enter your address"></textarea></td>
+
+</tr>
+
+<tr class="buttons">
+
+<td colspan="2">
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
